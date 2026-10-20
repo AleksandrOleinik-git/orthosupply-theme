@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
-add_action( 'woocommerce_before_main_content', static fn () => print( '<div class="container shop"><main class="shop__main">' ), 10 );
+add_action( 'woocommerce_before_main_content', static fn () => print( '<div class="container shop' . ( is_product() ? ' shop--single' : '' ) . '"><main class="shop__main">' ), 10 );
 add_action( 'woocommerce_after_main_content', static fn () => print( '</main></div>' ), 10 );
 
 // Breadcrumbs above the title, in the page head band.
