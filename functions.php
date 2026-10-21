@@ -4,7 +4,7 @@
  */
 defined( 'ABSPATH' ) || exit;
 
-define( 'OS_THEME_VERSION', '1.0.2' );
+define( 'OS_THEME_VERSION', '1.0.3' );
 
 require_once get_theme_file_path( 'inc/content.php' );
 require_once get_theme_file_path( 'inc/woocommerce.php' );

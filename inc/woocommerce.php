@@ -147,3 +147,6 @@ add_filter( 'get_term_metadata', static function ( $value, $object_id, $meta_key
 	wp_cache_set( 'os_cat_thumb_' . $object_id, $thumb, 'orthosupply', HOUR_IN_SECONDS );
 	return [ $thumb ];
 }, 10, 3 );
+
+// Shorter sale badge text.
+add_filter( 'woocommerce_sale_flash', static fn () => '<span class="onsale">Sale</span>' );

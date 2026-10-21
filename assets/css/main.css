@@ -67,6 +67,7 @@ ul.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr
 .empty{text-align:center;padding:48px 20px}.empty__icon{width:56px;height:56px;color:var(--line);margin:0 auto 14px}
 /* Single product */
 .single-product .shop__main > div.product{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px);padding-block:24px;position:relative}ul.products li.product{display:block}
+.single-product .shop__main > div.product > .onsale{position:absolute;top:12px;left:12px;z-index:5;padding:4px 10px;border-radius:999px;background:var(--red);color:#fff;font-size:12px;font-weight:700;line-height:1.4}.single-product .woocommerce-product-gallery{position:relative}
 .single-product .woocommerce-product-gallery{border:1px solid var(--line);border-radius:var(--r);padding:16px;background:#fff}.single-product .woocommerce-product-gallery img{object-fit:contain}
 .single-product .summary h1{font-size:clamp(22px,2.4vw,30px)}.single__brand{color:var(--muted);font-size:14px;margin-bottom:6px}
 .single-product .summary .price{font-size:28px;font-weight:800;margin:10px 0 4px}.single-product .summary .price del{font-size:18px;color:#9aa3ad;font-weight:500}.single-product .summary .price ins{text-decoration:none;color:var(--red)}
